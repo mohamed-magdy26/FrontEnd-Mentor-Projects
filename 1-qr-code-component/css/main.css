@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+  --radius: 15px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* for adjusting rem to 1px */
+  font-size: 6.25%;
+}
+
+/* Start Global Rules */
+.flex-col-20g {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img {
+  max-width: 100%;
+}
+
+/* End Global Rules */
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--Light-gray);
+  letter-spacing: 0.5px;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20rem;
+}
+
+.qr-component {
+  max-width: 350rem;
+  padding: 18rem;
+  background-color: var(--White);
+  border-radius: var(--radius);
+}
+
+.qr-component img {
+  border-radius: var(--radius);
+}
+
+.info {
+  font-size: 15rem;
+}
+
+.info h1 {
+  color: var(--Dark-blue);
+}
+
+.info p {
+  color: var(--Grayish-blue);
+}
+
+@media (max-width: 375px) {
+  .info {
+    font-size: 13rem;
+  }
+}
